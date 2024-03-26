@@ -34,7 +34,7 @@ class style():  # Class of different text colours - default is white
 # -------------------------------- INITIALISE ------------------------------------------
 
 #web3 = Web3(Web3.HTTPProvider("https://pancake-bnb.rpc.blxrbdn.com")) #BSC
-web3 = Web3(Web3.HTTPProvider("https://rpc.ankr.com/base/4fa210251dff912dcba3f8480d31a242b833acf7c849bf1e75c7b8bdb77ff054")) #BASE
+web3 = Web3(Web3.HTTPProvider("https://rpc.ankr.com/base/")) #BASE
 
 if web3.is_connected():
     #print(style.YELLOW + " BSC Node successfully connected")
