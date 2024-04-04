@@ -34,7 +34,7 @@ def read_abi_from_file(file_path):
 #         abi = file.read()
 #     return abi
 
-abi_file_path = 'abi/panabi.json'  # Thay đổi đường dẫn tệp tương ứng
+abi_file_path = 'abi/panabi.json'  
 panabi = read_abi_from_file(abi_file_path)
 
 sender_address = '0x......'  # TokenAddress of holder
@@ -50,7 +50,7 @@ contract_id = web3.to_checksum_address("Contract Token Addess")
 
 contract = web3.eth.contract(address=panRouterContractAddress, abi=panabi)
 
-sellAbi_file_path = 'abi/sellabi.json'  # Thay đổi đường dẫn tệp tương ứng
+sellAbi_file_path = 'abi/sellabi.json'  
 sellAbi = read_abi_from_file(sellAbi_file_path)
 
 sellTokenContract = web3.eth.contract(contract_id, abi=sellAbi)
