@@ -27,11 +27,6 @@ def read_abi_from_file(file_path):
         abi = json.load(file)
     return abi
 
-# def read_abi_from_file(file_path):
-#     with open(file_path, 'r') as file:
-#         abi = file.read()
-#     return abi
-
 abi_file_path = 'abi/panabi.json'
 panabi = read_abi_from_file(abi_file_path)
 
