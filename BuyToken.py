@@ -42,12 +42,6 @@ if web3.is_connected():
 balance = web3.eth.get_balance(config2.WalletAddress) # here balance is in wei
 b =web3.from_wei(balance,"ether")
 
-# pancakeswap factory
-#pancake_factory = '0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73'  #Testnet  #0x6725F303b657a9451d8BA641348b6761A6CC7a17
-#Feel free to get official ABI from pancake trust none:
-#pancake_factory_abi = load_abi_from_file("pancake_factory_abi.json")
-# contract = web3.eth.contract(address=pancake_factory, abi=pancake_factory_abi)
-
 """Connection to Pancakeswap"""
 
 
